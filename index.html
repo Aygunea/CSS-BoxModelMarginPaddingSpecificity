@@ -10,7 +10,16 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <div class="logo">
+                Start Bootstrap
+            </div>
+            <button type="submit">
+                Sign Up
+            </button>
+        </nav>
+    </header>
     <main>
         <section id="firstSection">
             <div class="firstSectionContent">
@@ -24,7 +33,6 @@
             </div>
         </section>
         <section id="secondSection">
-            <!-- <div class="iconsContent"> -->
             <div class="row">
                 <div class="col mr">
                     <i class="fa-solid fa-window-maximize"></i>
@@ -37,11 +45,17 @@
                     <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
                 </div>
                 <div class="col">
-                    <i class="fa-sharp fa-solid fa-terminal"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-terminal"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z" />
+                        <path
+                            d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+                    </svg>
                     <h2>Easy to Use</h2>
                     <p>Ready to use with your own content, or customize the files!</p>
                 </div>
-                <!-- </div> -->
+
             </div>
         </section>
         <section id="showCase">
@@ -96,10 +110,64 @@
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <section id="peopleSection">
+            <h2>What people are saying...</h2>
+            <div class="row">
+                <div class="card">
+                    <img src="./assets/images/testimonials-1.jpg" alt="">
+                    <h3 class="title">Margaret E.</h3>
+                    <p>
+                        "This is fantastic! Thanks so much guys!"
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/testimonials-2.jpg" alt="">
+                    <h3 class="title">Fred S.</h3>
+                    <p>
+                        "Bootstrap is amazing. I've been using it to create lots of super nice landing pages." </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/testimonials-3.jpg" alt="">
+                    <h3 class="title">Sarah W.</h3>
+                    <p>
+                        "Thanks so much for making these free resources available to us!"
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="firstSection" class="section">
+            <div class="firstSectionContent">
+                <h1>
+                    Ready to get started? Sign up now! </h1>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="links">
+            <ul>
+                <li><a href="$">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Term of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p>© Your Website 2023. All Rights Reserved.</p>
+        </div>
+        <div class="socialbox">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

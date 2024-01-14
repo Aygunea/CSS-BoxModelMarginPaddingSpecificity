@@ -3,28 +3,56 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.mr {
+  margin-right: 30px;
+}
+/* start Header */
+header {
+  background-color: #f8f9fa;
+}
+header nav {
+  width: 100%;
+  padding: 10px 100px;
+  display: inline-block;
+}
+header nav .logo {
+  font-size: 20px;
+  display: inline-block;
+}
+header nav button {
+  background-color: #0d6efd;
+  border: none;
+  color: #fff;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 80%;
+}
+/* start firstSection */
 #firstSection {
-  background-image: url("../images/bg-masthead.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(
+      rgba(28, 55, 94, 0.6),
+      rgba(28, 55, 94, 0.4)
+    ),
+    url("../images/bg-masthead.jpg");
 }
 .firstSectionContent {
-  width: 50%;
-  height: max-content;
-  /* background-color: antiquewhite; */
-  /* padding: 0 auto; */
+  width: 40%;
+  text-align: center;
   margin: auto;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 .firstSectionContent h1 {
-  font-size: 50px;
+  font-size: 52px;
   color: #fff;
-  margin-bottom: 40px;
-  width: 80%;
-  text-align: center;
+  margin-bottom: 10px;
+  padding: 30px 0;
+  box-sizing: border-box;
 }
 .firstSectionContent form button {
   background-color: #0d6efd;
@@ -36,6 +64,7 @@
   border-radius: 10px;
 }
 .firstSectionContent input {
+  width: 100%;
   margin-right: 20px;
   width: 55%;
   border: none;
@@ -44,30 +73,32 @@
   border-radius: 10px;
 }
 
+/* start secondSection */
 #secondSection {
   width: 100%;
-  /* background-color: #0d6efd; */
+  background-color: #f8f9fa;
 }
 #secondSection .row {
-  /* width: 100%; */
-  padding: 100px 50px;
+  width: 100%;
+  padding: 100px;
+  margin: auto;
 }
 #secondSection .row .col {
-  width: 30.5%;
+  width: 31.2%;
   display: inline-block;
-  padding: 30px 0;
-}
-.mr {
-  margin-right: 30px;
-}
-.mb {
-  margin-bottom: 30px;
+  text-align: center;
+  padding: 30px;
 }
 #secondSection .row .col i {
   font-size: 50px;
   color: #0d6efd;
   margin-bottom: 30px;
-  margin-left: 40%;
+}
+#secondSection .row .col svg {
+  width: 100px;
+  height: 50px;
+  color: #0d6efd;
+  margin-bottom: 30px;
 }
 #secondSection .row .col h2 {
   color: #212529;
@@ -85,20 +116,21 @@
 #showCase .row {
   width: 100%;
   height: max-content;
-  /* display: flex; */
 }
 #showCase .row .col {
   width: 49.5%;
   display: inline-block;
 }
 #showCase .row .showCaseİnfo {
-  padding: 0 100px ;
+  padding: 0 100px;
   box-sizing: border-box;
   color: #474e55;
+  vertical-align: top;
+  padding-top: 10%;
 }
 #showCase .row .showCaseİnfo .showCaseInfoText {
   width: 95%;
-  height:auto;
+  height: auto;
 }
 #showCase .row .col h2 {
   font-size: 32px;
@@ -111,4 +143,79 @@
 }
 #showCase .row .col img {
   width: 100%;
+}
+/* People Section */
+#peopleSection {
+  background-color: #f8f9fa;
+  padding: 100px;
+}
+#peopleSection h2 {
+  text-align: center;
+  font-size: 36px;
+}
+#peopleSection .row {
+  margin-top: 50px;
+}
+#peopleSection .row .card {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+#peopleSection .row h3 {
+  margin-bottom: 10px;
+}
+#peopleSection .row p {
+  width: 70%;
+  margin: auto;
+}
+#peopleSection img {
+  width: 192px;
+  height: 192px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.section {
+  height: 50vh !important;
+}
+.section .firstSectionContent {
+  padding-top: 60px;
+}
+.section h1 {
+  font-size: 36px;
+}
+/* Start Footer */
+footer {
+  width: 100%;
+  padding: 60px 80px;
+  display: inline-block;
+  background-color: #f8f9fa;
+}
+footer .links,
+footer .socialbox {
+  display: inline-block;
+}
+footer .socialbox {
+  width: 60%;
+  text-align: end;
+}
+footer .links ul {
+  margin-bottom: 15px;
+}
+footer .links ul li {
+  margin-right: 30px;
+  display: inline-block;
+}
+footer .links ul li a {
+  color: #0d6efd;
+}
+footer .links p {
+  color: #6c757d;
+}
+footer .socialbox a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+footer .socialbox a i {
+  font-size: 28px;
+  color: #0d6efd;
 }
